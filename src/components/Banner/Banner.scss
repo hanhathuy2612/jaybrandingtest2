@@ -1,74 +1,104 @@
 .Banner {
-  position: relative;
-  width: 100%;
-  height: 766px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('../../assets/images/banner.png') lightgray 50% / cover no-repeat;
-
-  &__content {
-    position: absolute;
-    top: 205px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    max-width: 906px;
+    position: relative;
     width: 100%;
-  }
+    height: 766px;
+    background:
+        linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url('../../assets/images/banner.png') lightgray 50% / cover no-repeat;
 
-  &__text {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-    width: 100%;
-  }
-
-  &__welcome {
-    color: #FFF;
-    text-align: center;
-    font-family: Montserrat, sans-serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 139%; /* 55.6px */
-    letter-spacing: -0.6px;
-  }
-
-  &__title {
-    color: #FFF;
-    font-family: Montserrat, sans-serif;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 139%;
-    text-align: center;
-  }
-
-  &__description {
-    color: #FFF;
-    text-align: center;
-    font-family: Lato, sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 37px; /* 231.25% */
-    letter-spacing: -0.24px;
-    text-transform: capitalize;
-    max-width: 798px;
-    width: 100%;
-  }
-
-  &__button {
-    // Styles for the button
-
-    &-icon {
-      // Styles for the button icon
+    &__content {
+        position: absolute;
+        top: 205px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        max-width: 906px;
+        width: 100%;
     }
 
-    &-text {
-      // Styles for the button text
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        width: 100%;
     }
-  }
+
+    &__welcome {
+        color: #fff;
+        text-align: center;
+        font-family: Montserrat, sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 139%; /* 55.6px */
+        letter-spacing: -0.6px;
+    }
+
+    &__title {
+        color: #fff;
+        font-family: Montserrat, sans-serif;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 139%;
+        text-align: center;
+    }
+
+    &__description {
+        color: #fff;
+        text-align: center;
+        font-family: Lato, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 37px; /* 231.25% */
+        letter-spacing: -0.24px;
+        text-transform: capitalize;
+        max-width: 798px;
+        width: 100%;
+    }
+
+    &__button-wrapper {
+        position: relative;
+    }
+
+    &__button {
+        position: relative;
+        display: inline-flex;
+        padding: 8px 32px;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+
+        &-icon {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+
+        &-text {
+            color: var(--Main-color);
+            text-align: justify;
+            font-family: Raleway, sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px; /* 200% */
+            letter-spacing: -0.21px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__button-behind-box {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 4px;
+        left: 4px;
+        background: var(--Main-color);
+    }
 }

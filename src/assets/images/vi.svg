@@ -1,13 +1,16 @@
 <svg width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="Vietnam (VN)" clip-path="url(#clip0_423_691)">
-<g id="Group">
-<path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M-1.66669 0H28.3333V20H-1.66669V0Z" fill="#EC0015"/>
-<path id="Vector_2" fill-rule="evenodd" clip-rule="evenodd" d="M16.9896 14.8828L13.4896 12.2773L10.013 14.9062L11.3021 10.625L7.8255 7.98047L12.1263 7.94141L13.4622 3.66797L14.8177 7.92969L19.1185 7.93359L15.6614 10.6055L16.9857 14.8867L16.9896 14.8828Z" fill="#FFFF00"/>
-</g>
-</g>
-<defs>
-<clipPath id="clip0_423_691">
-<rect width="26.6667" height="20" fill="white"/>
-</clipPath>
-</defs>
+    <g id="Vietnam (VN)" clip-path="url(#clip0_423_691)">
+        <g id="Group">
+            <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M-1.66669 0H28.3333V20H-1.66669V0Z"
+                  fill="#EC0015"/>
+            <path id="Vector_2" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16.9896 14.8828L13.4896 12.2773L10.013 14.9062L11.3021 10.625L7.8255 7.98047L12.1263 7.94141L13.4622 3.66797L14.8177 7.92969L19.1185 7.93359L15.6614 10.6055L16.9857 14.8867L16.9896 14.8828Z"
+                  fill="#FFFF00"/>
+        </g>
+    </g>
+    <defs>
+        <clipPath id="clip0_423_691">
+            <rect width="26.6667" height="20" fill="white"/>
+        </clipPath>
+    </defs>
 </svg>
