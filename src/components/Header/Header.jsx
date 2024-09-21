@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.scss'
-import logo from '../../assets/images/LOGO HKK 1.png'
+import logo from '../../assets/images/main-logo.png'
 import vi from '../../assets/images/vi.svg'
 import us from '../../assets/images/us.svg'
 import phone from '../../assets/images/phone.svg'

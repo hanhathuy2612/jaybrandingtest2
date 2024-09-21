@@ -1,6 +1,7 @@
 import React from 'react'
 import './Banner.scss'
-import archiveRight from '../../assets/images/archive-right.svg'
+import CommonButton from '../CommonButton/CommonButton'
+import { images } from '../../themes/imageRegistry'
 
 function Banner() {
     return (
@@ -22,19 +23,10 @@ function Banner() {
                     "con thuyền" HKK vươn ra biển lớn.
                 </p>
 
-                <div className="Banner__button-wrapper">
-                    <div className="Banner__button-behind-box"></div>
-                    <button className="Banner__button">
-                        <img
-                            src={archiveRight}
-                            alt="archiveRight"
-                            className="Banner__button-icon"
-                        />
-                        <span className="Banner__button-text">
-                            Tìm hiểu thêm
-                        </span>
-                    </button>
-                </div>
+                <CommonButton
+                    icon={images.archiveRight}
+                    text="Tìm hiểu thêm"
+                ></CommonButton>
             </div>
         </div>
     )

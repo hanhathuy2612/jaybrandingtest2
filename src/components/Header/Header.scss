@@ -121,7 +121,7 @@
         display: flex;
         gap: 8px;
         padding: 5px;
-        border: 1px solid var(--Main-color);
+        border: 1px solid var(--main-color);
         background: #fff;
         height: 44px;
 
@@ -130,7 +130,7 @@
             width: 43px;
             height: 43px;
             flex-shrink: 0;
-            background: var(--Main-color);
+            background: var(--main-color);
             transform: translateY(-10px);
         }
 
@@ -145,7 +145,7 @@
         &-separate {
             width: 1px;
             height: 27px;
-            background: var(--Main-color);
+            background: var(--main-color);
         }
 
         &-info {
@@ -154,7 +154,7 @@
             justify-content: space-between;
 
             &-text {
-                color: var(--Main-color);
+                color: var(--main-color);
                 text-align: justify;
                 font-family: Raleway, sans-serif;
                 font-size: 12px;
@@ -166,7 +166,7 @@
             }
 
             &-number {
-                color: var(--Main-color);
+                color: var(--main-color);
                 text-align: justify;
                 font-variant-numeric: lining-nums proportional-nums;
                 font-family: Raleway, sans-serif;
