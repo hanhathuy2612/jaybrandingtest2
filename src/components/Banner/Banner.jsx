@@ -1,40 +1,24 @@
-import React, { useEffect } from 'react'
+import React, { useState } from 'react'
 import './Banner.scss'
 import CommonButton from '../CommonButton/CommonButton'
 import { images } from '../../themes/imageRegistry'
 
 function Banner() {
-    useEffect(() => {
-        const points = document.querySelectorAll('.Banner__point')
+    const [activeIndex, setActiveIndex] = useState(2) // Default to the 3rd point (index 2)
+    const [preIndex, setPreIndex] = useState(2) // Default to the 3rd point (index 2)
 
-        const handlePointEnter = (point) => () => {
-            // Remove active class from all boxes
-            points.forEach((b) => b.classList.remove('Banner__point--active'))
-            // Add active class to the hovered box
-            point.classList.add('Banner__point--active')
-        }
+    const handleMouseEnter = (index) => {
+        setActiveIndex(index)
+    }
 
-        const handlePointLeave = (point) => () => {
-            point.classList.remove('Banner__point--active')
-            points[2].classList.add('Banner__point--active')
-        }
+    const handleMouseLeave = () => {
+        setActiveIndex(preIndex) // Set back to the 3rd point
+    }
 
-        points.forEach((point) => {
-            point.addEventListener('mouseenter', handlePointEnter(point))
-            point.addEventListener('mouseleave', handlePointLeave(point))
-
-            return () => {
-                points.removeEventListener(
-                    'mouseenter',
-                    handlePointEnter(point)
-                )
-                points.removeEventListener(
-                    'mouseleave',
-                    handlePointLeave(point)
-                )
-            }
-        })
-    }, [])
+    const handleClick = (index) => {
+        setActiveIndex(index)
+        setPreIndex(index)
+    }
 
     return (
         <div className="Banner">
@@ -62,11 +46,15 @@ function Banner() {
             </div>
 
             <div className="Banner__points">
-                <div className="Banner__point"></div>
-                <div className="Banner__point"></div>
-                <div className="Banner__point Banner__point--active"></div>
-                <div className="Banner__point"></div>
-                <div className="Banner__point"></div>
+                {[...Array(5)].map((_, index) => (
+                    <span
+                        key={index}
+                        className={`Banner__point ${activeIndex === index ? 'Banner__point--active' : ''}`}
+                        onMouseEnter={() => handleMouseEnter(index)}
+                        onMouseLeave={handleMouseLeave}
+                        onClick={() => handleClick(index)}
+                    />
+                ))}
             </div>
         </div>
     )
